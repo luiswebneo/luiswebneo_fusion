@@ -16,6 +16,10 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# vercel_app/wsgi.py
+# vercel_app/settings.py
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -26,7 +30,7 @@ SECRET_KEY = 'django-insecure-=w%+)l6!0sicr19$###7uh9gx%$oxd%n(4_w*4f#=jnfq98l_y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+ALLOWED_HOSTS = [ '127.0.0.1', ".vercel.app"]
 
 
 # Application definition
